@@ -260,52 +260,59 @@ Navbar
 ===============
 */
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   /* background: blue; */
 }
 
-.nav-center{
+.nav-center {
   width: 90vw;
   max-width: var(--max-width);
   /* background: red; */
 }
 
-.nav-header{
+.nav-header {
   height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-logo{
+.nav-logo {
   display: flex;
   align-items: center;
 }
 
-.nav-header img{
+.nav-header img {
   width: 200px;
 }
 
-.nav-btn{
+.nav-btn {
   padding: 0.15rem 0.75rem;
 }
 
-.nav-btn i{
+.nav-btn i {
   font-size: 1.25rem;
 }
 
-.nav-links{
+.nav-links {
+  height: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* todo */
+  transition: var(--transition);
 }
 
-.nav-link{
+.show-links {
+  height: 350px;
+}
+
+.nav-link {
   display: block;
   text-align: center;
+  font-size: 1.25rem;
   text-transform: capitalize;
   color: var(--grey-900);
   letter-spacing: var(--letterSpacing);
@@ -314,11 +321,11 @@ Navbar
   transition: var(--transition);
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: var(--primary-500);
 }
 
-.contact-link a{
-  padding: 0.15rem 1 rem;
+.contact-link a {
+  padding: 0.15rem 1rem;
 }
 
