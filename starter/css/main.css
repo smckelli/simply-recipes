@@ -360,3 +360,47 @@ Navbar
     margin-left: auto;
   }
 }
+
+/*
+=============== 
+Page
+===============
+*/
+ .page {
+  background: red;
+  width: 90vw;
+  /* 90% of view width */
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-top: 2rem;
+  min-height: calc(100vh - (6rem + 4rem)); 
+  /* 6rem and 4rem above are navbar and footer...100vh (view hight) subtracting nava nd foot is whole page */
+ }
+/*
+=============== 
+Footer
+===============
+*/
+.page-footer {
+  height: 4rem;
+  background: var(--black);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-footer p {
+  margin-bottom: 0;
+}
+
+.footer-logo, .page-footer a {
+  color: var(--primary-500)
+}
+
+
+/*
+=============== 
+
+===============
+*/
